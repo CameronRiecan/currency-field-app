@@ -1,3 +1,44 @@
+
+# Currency Field App
+
+This simple React application showcases the logic behind creating a dynamic input field for currency values. It allows users to input a number, and the app validates it against minimum and maximum values while providing instant feedback.
+
+## Features
+
+- Users can input numeric values.
+- The app enforces a minimum value of 100 and a maximum value of 1 million.
+- It displays feedback messages based on user input:
+  - "Good job!" for valid values.
+  - "The minimum is 100. The maximum is 1 million. Try Again!" for values outside the specified range.
+- It shows a timer message that appears one second after the user has entered their digits.
+
+## How It Works
+
+The application uses React to create a dynamic input field. Here's a breakdown of how it operates:
+
+1. The user enters a numeric value into the input field.
+2. The `updateField` function is triggered by the `onChange` event.
+3. The entered value is checked against the specified conditions:
+   - It must be greater than or equal to 100.
+   - It must be less than or equal to 1 million.
+   - It must have a length of at least 3 characters.
+4. If the input meets these conditions, a "Good job!" message is displayed, and a timer is set to call an API (placeholder function) after one second.
+5. If the input does not meet the conditions, an error message is displayed.
+
+### Please Note
+
+- The actual API call should replace the timer function to demonstrate dynamic behavior effectively.
+- The app does not automatically set the input value to the minimum when the user starts typing, allowing users to correct their input without interruption.
+
+## How to Use
+
+1. Clone this repository to your local machine.
+2. Run `npm install` to install the necessary dependencies.
+3. Start the app with `npm start`.
+4. Open the app in your browser and enter numeric values in the input field to see how it responds.
+
+Feel free to modify and enhance this app to suit your needs or to integrate it into a larger project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
